@@ -13,12 +13,12 @@ namespace Tyuiu.NasyrovaVR.Sprint3.Task5.V22.Lib
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
             double sumSeries = 0;
-            int i, j;
+            int i, k;
             for (i = startValue1; i <= stopValue1; i++)
             {
-                for (j = startValue2; j <= stopValue2; j++)
+                for (k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries = sumSeries + ((Math.Pow(x, 3)*Math.Sin(startValue2))+2);
+                    sumSeries = sumSeries + ((Math.Pow(x, 3) * Math.Sin(k)) + 2);
                 }
             }
             return Math.Round(sumSeries, 3);
